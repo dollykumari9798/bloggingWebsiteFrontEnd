@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.creParent{
+  background: beige;
+  margin-top: 2rem;
+  padding: 4rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 2rem;
+}

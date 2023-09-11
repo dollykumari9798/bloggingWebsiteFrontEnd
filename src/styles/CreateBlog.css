@@ -1,0 +1,133 @@
+.CreateBlogParent {
+    display: flex;
+    flex-direction: row;
+}
+.CreateBlogParent > div {
+    width: 50%;
+}
+.CreateBlogParent .cpStruture {
+    border-right: 1px solid #000;
+    /* overflow-y: auto; */
+    /* height: ; */
+}
+/* Blog Structure */
+.cpStruture .BlogInTitle,
+.bidDesc {
+    margin: 1rem 2rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 1rem;
+}
+.bitKey {
+    font-weight: bold;
+}
+.cpStruture .BlogInDetails,
+.BlogInImg,
+.BlogInBody {
+    /* background: beige; */
+    margin: 1rem 0.5rem;
+    margin-top: 2rem;
+    border: 1px solid grey;
+    position: relative;
+}
+.cpStruture > div h3 {
+    margin: 0;
+    position: absolute;
+    top: -0.8em;
+    left: 0.5em;
+    padding: 0 0.5em;
+    background: #fff;
+    width: fit-content;
+}
+.cpStruture .BlogInImg > div {
+    margin: 1rem 2rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 1rem;
+}
+.BlogInBody {
+    padding: 1rem 0.5rem;
+    padding-right: 0;
+}
+
+.BlogInBody > h3 {
+    color: rgb(59, 59, 59);
+}
+.BlogInBody .scrollWrapper{
+    overflow-y: auto;
+    max-height: 20rem;
+    padding-top: 0.5rem ;
+}
+.scrollWrapper::-webkit-scrollbar {
+    display: none;
+  }
+.BlogInBody .BodyControlParent {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    /* margin-top: 1rem; */
+}
+.BlogInBody .BodyControlParent .seperator {
+    border-right: 2px solid black;
+}
+.BlogInBody .BodyControlParent .ControlPannel {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+.BodyControlParent button {
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 2rem;
+    font-size: 1rem;
+    width: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.BlogInBody .BodyControlParent .ControlPannel button {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    opacity: 0;
+}
+.BlogInBody .BodyControlParent .ControlPannel button:nth-child(1) {
+    transform: translateX(-2rem);
+}
+.BlogInBody .BodyControlParent .ControlPannel button:nth-child(2) {
+    transform: translateX(-4rem);
+}
+.BlogInBody .BodyControlParent .ControlPannel button:nth-child(3) {
+    transform: translateX(-6rem);
+}
+.BlogInBody .BodyControlParent .ControlPannel button:nth-child(4) {
+    transform: translateX(-8rem);
+}
+.PlusBtn {
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+.rotate {
+    transform: rotateZ(225deg);
+    background: beige;
+}
+.BlogInBody .BodyControlParent .ControlPannel button.travel1 {
+    transform: translateX(0rem);
+    opacity: 1;
+}
+.BlogInBody .BodyControlParent .ControlPannel button.travel2 {
+    transform: translateX(0rem);
+    opacity: 1;
+}
+.BlogInBody .BodyControlParent .ControlPannel button.travel3 {
+    transform: translateX(0rem);
+    opacity: 1;
+}
+.BlogInBody .BodyControlParent .ControlPannel button.travel4 {
+    transform: translateX(0rem);
+    opacity: 1;
+}
+.cpPreview{
+    position: relative;
+}

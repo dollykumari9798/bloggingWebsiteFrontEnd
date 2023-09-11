@@ -1,0 +1,59 @@
+.recomendedParent{
+    border-bottom: 1px solid rgb(201, 201, 201);
+    border-top: 1px solid rgb(201, 201, 201);
+    padding-bottom: 2rem;
+    background: #f5f5f589;
+}
+.recomendedParent .recommendedBlogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: fit-content;
+    column-gap: 2rem;
+    margin: 0 auto;
+}
+
+/* Blog Card */
+.CardParent{
+    width: 20rem;
+    height:25rem;
+    background: #f5f5f589;
+    box-shadow: 0px 0px 43px -11px rgba(0,0,0,0.75);
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+}
+.CardParent .BlogImg img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+.CardParent .cardContent{
+    text-align: left;
+}
+.CardParent .cardContent .cardTitle{
+    font-size: 1.8rem ;
+    margin: 0.8rem 0;
+    margin-bottom: 0.5rem;
+}
+.CardParent .cardContent .cardDate{
+    color: grey;
+    font-size: 0.8rem;
+}
+.CardParent .cardContent .cardBody{
+    font-size: 1rem;
+    color: rgb(77, 77, 77);
+}
+button{
+    background: transparent;
+    border: none;
+}
+.CardParent .cardContent .cardBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.CardParent .cardContent .cardBtns button{
+    font-size: 1.2rem;
+    position: relative;
+    top: 0.25rem;
+    cursor: pointer;
+}
